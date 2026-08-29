@@ -8,9 +8,9 @@ groq>=0.9,<1
 python-dotenv>=1.0,<2
 
 # Computer vision (headless — no GUI dependencies)
+# deepface and tensorflow are optional; the app falls back gracefully when absent.
+# They are excluded here because tensorflow-cpu build times exceed cloud limits.
 opencv-python-headless>=4.9,<5
-deepface==0.0.92
-tensorflow-cpu>=2.15,<2.20
 
 # Data & numerics
 numpy>=1.26,<2
