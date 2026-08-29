@@ -25,7 +25,7 @@ reportlab>=4.2,<5
 
 # Browser live-camera / microphone streaming
 streamlit-webrtc>=0.63,<1
-av>=10.0,<14
+av>=14.0
 
 # Testing (not installed on cloud, but kept for CI parity)
 pytest>=8,<9
