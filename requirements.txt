@@ -1,14 +1,31 @@
+# Core framework
 streamlit>=1.36,<2
+
+# AI / LLM
 groq>=0.9,<1
+
+# Environment config
 python-dotenv>=1.0,<2
 
+# Computer vision (headless — no GUI dependencies)
 opencv-python-headless>=4.9,<5
 deepface==0.0.92
-tensorflow>=2.15,<2.20
+tensorflow-cpu>=2.15,<2.20
 
+# Data & numerics
 numpy>=1.26,<2
 pandas>=2.2,<3
-plotly>=5.22,<7
 scipy>=1.13,<2
+
+# Visualisation
+plotly>=5.22,<7
+
+# Report generation
 reportlab>=4.2,<5
+
+# Browser live-camera / microphone streaming
 streamlit-webrtc>=0.63,<1
+av>=10.0,<14
+
+# Testing (not installed on cloud, but kept for CI parity)
+pytest>=8,<9
